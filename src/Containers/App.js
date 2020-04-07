@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Person from './Components/Person'
+import Person from '../Components/Persons/Person'
 
 
 class App extends React.Component {
@@ -68,6 +67,7 @@ class App extends React.Component {
                             name = {person.name}
                             age = {person.age}
                             click = {() => this.deletePersonsHandler(index)}
+                            key = {index}
                         />
                     })
                 }
